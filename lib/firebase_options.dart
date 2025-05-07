@@ -23,14 +23,17 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
+          'DefaultFirebaseOptions have not been configured for ios - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
+      case TargetPlatform.macOS:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      case TargetPlatform.windows:
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,38 +47,32 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAEv_DGaceJFRUl72XZ0nEff2DYlyog0yg',
-    appId: '1:145125421775:web:af34e323b93dcdb733bdba',
-    messagingSenderId: '145125421775',
-    projectId: 'foodly-restaurant-2025',
+    apiKey: 'AIzaSyA_LJBJNOKjaRrP57x-jsH3s9TqGYIiUpU',
+    appId: '1:139171431687:web:b6207fffea8081220df1a2',
+    messagingSenderId: '139171431687',
     authDomain: 'foodly-restaurant-2025.firebaseapp.com',
-    storageBucket: 'foodly-restaurant-2025.firebasestorage.app',
-    measurementId: 'G-36R0SB30NZ',
+    projectId: 'foodly-restaurant-2025',
+    storageBucket: 'foodly-restaurant-2025.appspot.com',
+
+    measurementId: 'G-HGPJT4MY5Y',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD9w9YVJsaq0D0V_qkWOFmug-bLRgHYyd8',
-    appId: '1:145125421775:android:fee99686ddf46ab733bdba',
-    messagingSenderId: '145125421775',
+    apiKey: 'AIzaSyA6INrVCgq36OzqGJJGYkE-M1V3Bei7woQ',
+    appId: '1:139171431687:android:a1b7f11916a6e3e60df1a2',
+    messagingSenderId: '139171431687',
     projectId: 'foodly-restaurant-2025',
-    storageBucket: 'foodly-restaurant-2025.firebasestorage.app',
+    storageBucket: 'foodly-restaurant-2025.appspot.com',
+
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAIX6SzjIbXmnqeee4Y_GaW0NKZE_rR50g',
-    appId: '1:145125421775:ios:dd7ac7c7569539d333bdba',
-    messagingSenderId: '145125421775',
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyA_LJBJNOKjaRrP57x-jsH3s9TqGYIiUpU',
+    appId: '1:139171431687:web:91b472be845976270df1a2',
+    messagingSenderId: '139171431687',
     projectId: 'foodly-restaurant-2025',
-    storageBucket: 'foodly-restaurant-2025.firebasestorage.app',
-    iosBundleId: 'com.example.restaurantFoodly',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAIX6SzjIbXmnqeee4Y_GaW0NKZE_rR50g',
-    appId: '1:145125421775:ios:dd7ac7c7569539d333bdba',
-    messagingSenderId: '145125421775',
-    projectId: 'foodly-restaurant-2025',
-    storageBucket: 'foodly-restaurant-2025.firebasestorage.app',
-    iosBundleId: 'com.example.restaurantFoodly',
+    storageBucket: 'foodly-restaurant-2025.appspot.com',
+    authDomain: 'foodly-restaurant-2025.firebaseapp.com',
+    measurementId: 'G-R8VQPL1VD0',
   );
 }

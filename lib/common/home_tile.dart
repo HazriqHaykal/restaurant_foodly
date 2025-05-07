@@ -20,7 +20,7 @@ class HomeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap, // ✅ Corrected the casing here
+      onTap: onTap, 
       child: Column(
         children: [
           SvgPicture.asset(

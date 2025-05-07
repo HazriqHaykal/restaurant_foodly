@@ -11,10 +11,10 @@ class CustomAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width, // Make sure `width` is defined in constants.dart
+      width: width, // Ensure `width` is defined in constants.dart
       height: 100.h,
       padding: EdgeInsets.fromLTRB(12.w, 45.h, 12.w, 0),
-      color: kPrimary,
+      color: kSecondary,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -23,21 +23,21 @@ class CustomAppbar extends StatelessWidget {
               CircleAvatar(
                 radius: 20.r,
                 backgroundColor: Colors.white,
-                backgroundImage: const AssetImage("assets/images/profile.png"),
+                backgroundImage: const AssetImage("assets/images/profile.jpg"),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8.0.w),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min, // This line fixes the overflow
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ReusableText(
                       text: "Kings Foods",
-                      style: appStyle(14, Colors.white, FontWeight.bold)
+                      style: appStyle(14, Colors.white, FontWeight.bold),
                     ),
                     ReusableText(
-                      text:  "Universiti Putra Malaysia",
-                      style: appStyle(12, Colors.white, FontWeight.normal)
+                      text: "Universiti Putra Malaysia",
+                      style: appStyle(12, Colors.white, FontWeight.normal),
                     ),
                   ],
                 ),
