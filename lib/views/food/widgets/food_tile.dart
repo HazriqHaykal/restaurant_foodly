@@ -57,10 +57,10 @@ class FoodTitle extends StatelessWidget {
                       height: 16.h,
                       width: MediaQuery.of(context).size.width * 0.7,
                       child: ListView.builder(
-                        itemCount: foods['addictives'].length,
+                        itemCount: foods['additives'].length,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, i) {
-                          String title = foods['addictives'][i]['title'];
+                          String title = foods['additives'][i]['title'];
                           return Container(
                             margin: EdgeInsets.only(right: 5.w),
                             decoration: BoxDecoration(
