@@ -23,7 +23,7 @@ class CustomAppbar extends StatelessWidget {
               CircleAvatar(
                 radius: 20.r,
                 backgroundColor: Colors.white,
-                backgroundImage: const AssetImage("assets/images/profile.jpg"),
+                backgroundImage: const AssetImage("assets/images/spaghetti.png"),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8.0.w),

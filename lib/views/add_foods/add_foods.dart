@@ -3,7 +3,9 @@ import 'package:restaurant_foodly/common/app_style.dart';
 import 'package:restaurant_foodly/common/background_container.dart';
 import 'package:restaurant_foodly/common/reusable_text.dart';
 import 'package:restaurant_foodly/constants/constants.dart';
+import 'package:restaurant_foodly/views/add_foods/widgets/additivies_info.dart';
 import 'package:restaurant_foodly/views/add_foods/widgets/all_categories.dart';
+import 'package:restaurant_foodly/views/add_foods/widgets/food_info.dart';
 import 'package:restaurant_foodly/views/add_foods/widgets/image_uploads.dart';
 
 class AddFoods extends StatefulWidget {
@@ -14,11 +16,27 @@ class AddFoods extends StatefulWidget {
 }
 
 class _AddFoodsState extends State<AddFoods> {
-  @override
-
   final PageController _pageController = PageController();
-  int _currentPage =0;
+  final TextEditingController title = TextEditingController();
+  final TextEditingController description = TextEditingController();
+  final TextEditingController price = TextEditingController();
+  final TextEditingController preparation = TextEditingController();
+  final TextEditingController types = TextEditingController();
+  final TextEditingController additivePrice = TextEditingController();
+  final TextEditingController additiveTitle = TextEditingController();
 
+  @override
+  void dispose(){
+    title.dispose();
+    description.dispose();
+    price.dispose();
+    preparation.dispose();
+    types.dispose();
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kSecondary,
@@ -29,37 +47,72 @@ class _AddFoodsState extends State<AddFoods> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            ReusableText(text: "Welcome to Restaurant Panel", style: appStyle(14, kLightWhite, FontWeight.w600)),
-            ReusableText(text: "Fill all the required info to add food items", style: appStyle(12, kLightWhite, FontWeight.normal)),
-
+            ReusableText(text: "Welcome to Restaurant Panel", 
+            style: appStyle(14, kLightWhite, FontWeight.w600)),
+            ReusableText(text: "Fill all the required info to add food items", 
+            style: appStyle(12, kLightWhite, FontWeight.normal)),
           ],
         ),
-
       ),
-      body: BackGroundContainer(child: ListView(
+      body: BackGroundContainer(
+        child: ListView(
+          children: [
+            SizedBox(
+              width: width,
+              height: height,
+              child: PageView(
+                controller: _pageController,
+                physics: const NeverScrollableScrollPhysics(),
+                pageSnapping: false,
+                children: [
+                  ChooseCategory(
+                    next:(){
+                      _pageController.nextPage(
+                          duration: const Duration(milliseconds: 500),
+                          curve: Curves.easeIn);
+                    },
+                  ),
 
-        children: [
-          SizedBox(
-            width: width,
-            height: height,
-            child: PageView(
-              controller: _pageController,
-              physics: const NeverScrollableScrollPhysics(),
-              pageSnapping: false,
-              children: [
-                ChooseCategory(
-                  next: (){
-                    _pageController.nextPage(duration: const Duration(milliseconds: 500), curve:Curves.easeIn);
-                  }
-                ),
+                  ImageUploads(
+                    back: (){
+                      _pageController.previousPage(
+                          duration: const Duration(milliseconds: 500),
+                          curve: Curves.easeIn);
+                    },
+                    next: (){
+                      _pageController.nextPage(
+                          duration: const Duration(milliseconds: 500),
+                          curve: Curves.easeIn);
+                    },
+                  ),
 
-          ImageUploads()
-              ],
+                  FoodInfo(
+                      back: (){
+                        _pageController.previousPage(
+                            duration: const Duration(milliseconds: 500),
+                            curve: Curves.easeIn);
+                      },
+                      next: (){
+                        _pageController.nextPage(
+                            duration: const Duration(milliseconds: 500),
+                            curve: Curves.easeIn);
+                      },
+                      title: title,
+                      description: description,
+                      price: price,
+                      preparation: preparation,
+                      types:types
+                  ),
+
+                  AdditivesInfo(
+                    additivePrice: additivePrice,
+                    additiveTitle: additiveTitle,
+                  ),
+                ],
+              ),
             ),
-          )
-        ],
-
-      )),
+          ],
+        ),),
     );
   }
 }

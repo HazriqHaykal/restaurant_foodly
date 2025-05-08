@@ -4,7 +4,7 @@ List categories = [
     "title": "Fried Rice",
     "value": "fried_rice",
     "imageUrl":
-        "https://toppng.com/uploads/preview/fried-chicken-with-rice-png-11552936447iql1vnw4uj.png",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "createdAt": "2023-10-24T16:12:23.571Z",
     "updatedAt": "2023-10-24T16:12:23.571Z",
     "__v": 0
@@ -15,7 +15,7 @@ List categories = [
     "title": "Curry",
     "value": "curry",
     "imageUrl":
-        "",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "__v": 0
   },
   {
@@ -23,7 +23,7 @@ List categories = [
     "title": "Pizza",
     "value": "pizza",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/466693e6-f999-42e0-8794-09325ece1b45-Pizza.png",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "__v": 0
   },
   {
@@ -31,7 +31,7 @@ List categories = [
     "title": "Pasta",
     "value": "pasta",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/6645cf41-bc89-4dd0-9f80-bba9487633b2-Spaghetti.png",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "__v": 0
   },
   {
@@ -39,7 +39,7 @@ List categories = [
     "title": "Beverages",
     "value": "beverages",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/93c4b3df-9e55-4308-a834-9fe4ad67c0b3-bar.png",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "__v": 0
   },
   {
@@ -47,7 +47,7 @@ List categories = [
     "title": "Burgers",
     "value": "burgers",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/3c94bc09-b8b9-4961-accb-f68b7e8121cc-Hamburger.png",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "__v": 0
   },
   {
@@ -55,7 +55,7 @@ List categories = [
     "title": "Chicken",
     "value": "chicken",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/139718b2-2832-40c5-8d7b-11fd9feb0aac-chicken.png",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "__v": 0
   },
   {
@@ -63,7 +63,7 @@ List categories = [
     "title": "More",
     "value": "more",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/08323562-a3c6-461d-95a3-b3817c99871b-more.png",
+        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
     "__v": 0
   }
 ];
@@ -74,11 +74,11 @@ const restaurants = [
     "title": "Lapisara Eatery",
     "time": "6:00am - 9:00pm",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://img.freepik.com/free-psd/delicious-veggie-pasta-wok_191095-86370.jpg?semt=ais_hybrid&w=740",
     "owner": "fdfsdfsdfs",
     "code": "41007428",
     "logoUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://img.freepik.com/free-psd/delicious-veggie-pasta-wok_191095-86370.jpg?semt=ais_hybrid&w=740",
     "rating": 5,
     "ratingCount": "6765",
     "coords": {
@@ -118,7 +118,7 @@ const restaurants = [
     "title": "La Foods",
     "time": "6:00am - 9:00pm",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+        "https://img.freepik.com/free-psd/delicious-veggie-pasta-wok_191095-86370.jpg?semt=ais_hybrid&w=740",
     "owner": "fgdgdfgd",
     "code": "41007428",
     "logoUrl":

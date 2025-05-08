@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:restaurant_foodly/common/app_style.dart';
 import 'package:restaurant_foodly/common/background_container.dart';
 import 'package:restaurant_foodly/common/custom_appbar.dart';
+import 'package:restaurant_foodly/common/home_tile.dart';
+import 'package:restaurant_foodly/common/tab_widget.dart';
 import 'package:restaurant_foodly/constants/constants.dart';
 import 'package:restaurant_foodly/views/home/home_tiles.dart';
 import 'package:restaurant_foodly/views/home/widget/home_tabs.dart';
@@ -12,7 +15,6 @@ import 'package:restaurant_foodly/views/home/widget/orders/picked_orders.dart';
 import 'package:restaurant_foodly/views/home/widget/orders/preparing.dart';
 import 'package:restaurant_foodly/views/home/widget/orders/ready_orders.dart';
 import 'package:restaurant_foodly/views/home/widget/orders/self_deliveries.dart';
-
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,14 +36,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffa44f),
+      backgroundColor: kSecondary,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Color(0xffffa44f),
+        backgroundColor: kSecondary,
         flexibleSpace: const CustomAppbar(),
       ),
       body: BackGroundContainer(
-        color: Color(0xffFAFAFC),
+        color: kLightWhite,
         child: Column(
           children: [
             SizedBox(height: 15.h),
