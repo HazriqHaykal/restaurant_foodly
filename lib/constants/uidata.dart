@@ -4,7 +4,7 @@ List categories = [
     "title": "Fried Rice",
     "value": "fried_rice",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "createdAt": "2023-10-24T16:12:23.571Z",
     "updatedAt": "2023-10-24T16:12:23.571Z",
     "__v": 0
@@ -15,7 +15,7 @@ List categories = [
     "title": "Curry",
     "value": "curry",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "__v": 0
   },
   {
@@ -23,7 +23,7 @@ List categories = [
     "title": "Pizza",
     "value": "pizza",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "__v": 0
   },
   {
@@ -31,7 +31,7 @@ List categories = [
     "title": "Pasta",
     "value": "pasta",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "__v": 0
   },
   {
@@ -39,7 +39,7 @@ List categories = [
     "title": "Beverages",
     "value": "beverages",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "__v": 0
   },
   {
@@ -47,7 +47,7 @@ List categories = [
     "title": "Burgers",
     "value": "burgers",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "__v": 0
   },
   {
@@ -55,7 +55,7 @@ List categories = [
     "title": "Chicken",
     "value": "chicken",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "__v": 0
   },
   {
@@ -63,7 +63,7 @@ List categories = [
     "title": "More",
     "value": "more",
     "imageUrl":
-        "https://i.pinimg.com/736x/b8/ca/4f/b8ca4f33a0e878bcf1cc146cd8969832.jpg",
+        "https://img.freepik.com/free-psd/delicious-spaghetti-dish-with-fresh-ingredients-pan-with-transparent-background_84443-25952.jpg",
     "__v": 0
   }
 ];
